@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './header/Header';
 
 export default function App() {
   return (
     <div>
-      <h1 className="text-xl">My React App</h1>
+      <Header />
     </div>
   );
 }
