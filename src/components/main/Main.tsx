@@ -6,9 +6,9 @@ interface MainProps {
 
 export default function Main({ children }: MainProps) {
   return (
-    <main className="block max-w-6xl mx-auto px-24 bg-blue-100">
+    <main className="block max-w-6xl mx-auto px-6 md:px-24 bg-blue-100">
       <section className="min-h-screen flex flex-col bg-slate-100 justify-center space-y-7">
-        <h1 className="text-6xl tracking-tighter">
+        <h1 className="text-5xl md:text-6xl tracking-tighter">
           <b>Sumedh</b> Inamdar
         </h1>
         <h2 className="text-2xl flex items-center">

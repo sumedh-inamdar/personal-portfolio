@@ -8,7 +8,15 @@ module.exports = {
       darkBlue: '#001d3d',
       midnightBlue: '#000814'
     },
-    extend: {}
+    extend: {
+      flex: {
+        2: '2 1 0%'
+      },
+      boxShadow: {
+        gold: '20px 25px gold',
+        goldShort: '10px 15px gold'
+      }
+    }
   },
   plugins: []
 };
