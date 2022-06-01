@@ -6,6 +6,7 @@ import reactLogo from './assets/brandIcons/react.svg';
 import jestLogo from './assets/brandIcons/jest.svg';
 import webpackLogo from './assets/brandIcons/webpack.svg';
 import gitLogo from './assets/brandIcons/git.svg';
+import tennsCentrlClip from './assets/projectClips/tennsCentrlDemoH264.m4v';
 
 export const navConfig = [
   {
@@ -64,5 +65,16 @@ export const brandIcons = [
   {
     name: 'Git',
     src: gitLogo
+  }
+];
+
+export const featuredProjects = [
+  {
+    clip: tennsCentrlClip,
+    class: 'clipOne',
+    name: 'TENNS CENTRL',
+    description:
+      'Fictional tennis shop site where a user can browse through merchandise across different pages, add / delete items, and proceed to a checkout page.',
+    tech: 'React Router, React Context API, React Testing Library, Intersection Observer API, Tailwind CSS, CSS Animations'
   }
 ];
