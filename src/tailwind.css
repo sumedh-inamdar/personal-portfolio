@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply text-lg md:text-xl
-    }
-
+  body {
+    @apply text-lg md:text-xl;
+  }
 }
 @layer components {
   .typewriter {

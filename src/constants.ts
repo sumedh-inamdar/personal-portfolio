@@ -75,6 +75,15 @@ export const featuredProjects = [
     name: 'TENNS CENTRL',
     description:
       'Fictional tennis shop site where a user can browse through merchandise across different pages, add / delete items, and proceed to a checkout page.',
-    tech: 'React Router, React Context API, React Testing Library, Intersection Observer API, Tailwind CSS, CSS Animations'
+    tech: [
+      'React Router',
+      'React Context API',
+      'React Testing Library',
+      'Intersection Observer API',
+      'Tailwind CSS',
+      'CSS Animations'
+    ],
+    link: 'https://sumedh-inamdar.github.io/shopping-cart/',
+    github: 'https://github.com/sumedh-inamdar/shopping-cart'
   }
 ];
