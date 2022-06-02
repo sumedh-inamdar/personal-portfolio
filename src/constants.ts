@@ -6,7 +6,7 @@ import reactLogo from './assets/brandIcons/react.svg';
 import jestLogo from './assets/brandIcons/jest.svg';
 import webpackLogo from './assets/brandIcons/webpack.svg';
 import gitLogo from './assets/brandIcons/git.svg';
-import tennsCentrlClip from './assets/projectClips/tennsCentrlDemoH264.m4v';
+import tennsCentrlClip from './assets/projectClips/clipOneH264.m4v';
 
 export const navConfig = [
   {
