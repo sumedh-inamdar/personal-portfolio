@@ -8,6 +8,30 @@
   }
 }
 @layer components {
+  .projWrap:nth-child(odd) video {
+    grid-area: 1 / 1 / 7 / 9;
+  }
+  .projWrap:nth-child(even) video {
+    grid-area: 1 / 5 / 7 / 13;
+  }
+  .projWrap:nth-child(odd) .projData {
+    grid-area: 2 / 5 / 7 / 13;
+  }
+  .projWrap:nth-child(even) .projData {
+    grid-area: 2 / 1 / 7 / 9;
+  }
+  .projWrap:nth-child(odd) .projName {
+    text-align: right;
+  }
+  .projWrap:nth-child(even) .projName {
+    text-align: left;
+  }
+  .projWrap:nth-child(odd) .projLinks {
+    justify-content: flex-end;
+  }
+  .projWrap:nth-child(even) .projLinks {
+    justify-content: flex-start;
+  }
   .typewriter {
     border-right: 0.15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */

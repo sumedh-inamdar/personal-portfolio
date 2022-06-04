@@ -7,6 +7,7 @@ import jestLogo from './assets/brandIcons/jest.svg';
 import webpackLogo from './assets/brandIcons/webpack.svg';
 import gitLogo from './assets/brandIcons/git.svg';
 import tennsCentrlClip from './assets/projectClips/clipOneH264.m4v';
+import cvMakerClip from './assets/projectClips/clipTwoH264.m4v';
 
 export const navConfig = [
   {
@@ -71,7 +72,6 @@ export const brandIcons = [
 export const featuredProjects = [
   {
     clip: tennsCentrlClip,
-    class: 'clipOne',
     name: 'TENNS CENTRL',
     description:
       'Fictional tennis shop site where a user can browse through merchandise across different pages, add / delete items, and proceed to a checkout page.',
@@ -85,5 +85,14 @@ export const featuredProjects = [
     ],
     link: 'https://sumedh-inamdar.github.io/shopping-cart/',
     github: 'https://github.com/sumedh-inamdar/shopping-cart'
+  },
+  {
+    clip: cvMakerClip,
+    name: 'CV Maker',
+    description:
+      'CV creator that allows user to add / delete / update jobs, education, skills, and their profile. User can then export their CV as a PDF.',
+    tech: ['React', 'ReactToPrint (PDF export)', 'React Calendar'],
+    link: 'https://sumedh-inamdar.github.io/cv-application/',
+    github: 'https://github.com/sumedh-inamdar/cv-application'
   }
 ];

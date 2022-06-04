@@ -4,7 +4,6 @@ import FeatureTech from './FeatureTech';
 interface dataProps {
   data: {
     clip: string;
-    class: string;
     name: string;
     description: string;
     tech: string[];
@@ -22,17 +21,17 @@ function pauseVideo(event: SyntheticEvent) {
 }
 export default function FeatureProj({ data }: dataProps) {
   return (
-    <li className="flex flex-col-reverse md:grid grid-cols-12 grid-rows-6 items-center">
+    <li className="projWrap flex flex-col-reverse md:grid grid-cols-12 grid-rows-6 items-center">
       <video
-        className="w-8/12 md:w-full relative -top-12 -left-12 md:top-0 md:left-0 z-0 row-start-1 row-end-7 col-start-1 col-end-9 contrast-50 hover:contrast-100 transition-all"
+        className="w-8/12 md:w-full relative -top-12 -left-12 md:top-0 md:left-0 z-0 contrast-50 hover:contrast-100 transition-all"
         onPointerOver={playVideo}
         onPointerLeave={pauseVideo}
         muted={true}
         loop>
         <source src={data.clip} type="video/mp4" />
       </video>
-      <div className="drop-shadow-xl flex flex-col z-10 row-start-2 row-end-7 col-start-5 col-end-13">
-        <div className="text-2xl text-right font-extrabold tracking-wider">
+      <div className="projData drop-shadow-xl flex flex-col z-10">
+        <div className="projName text-2xl font-extrabold tracking-wider">
           {data.name}
         </div>
         <div className="bg-yellow text-navyBlue text-base p-2 md:p-6">
@@ -43,7 +42,7 @@ export default function FeatureProj({ data }: dataProps) {
             <FeatureTech key={tech} name={tech} />
           ))}
         </div>
-        <div className="flex justify-end m-4 space-x-5">
+        <div className="projLinks flex m-4 space-x-5">
           <a
             href={data.github}
             aria-label="External Link"
