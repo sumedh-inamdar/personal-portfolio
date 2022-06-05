@@ -30,7 +30,7 @@
     justify-content: flex-end;
   }
   .projWrap:nth-child(even) .projLinks {
-    justify-content: flex-start;
+    @apply justify-end md:justify-start;
   }
   .typewriter {
     border-right: 0.15em solid orange; /* The typwriter cursor */
