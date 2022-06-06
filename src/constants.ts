@@ -137,5 +137,45 @@ export const regularProjects = [
     tech: ['Vanilla JS', 'SOLID principles'],
     link: 'https://sumedh-inamdar.github.io/Todo-List/',
     github: 'https://github.com/sumedh-inamdar/Todo-List'
+  },
+  {
+    name: 'Tic Tac Toe',
+    description:
+      'User playable against computer or human. Minimax AI algorithm chosen for shortest depth.',
+    tech: ['Factory Functions', 'Module Patterns'],
+    link: 'https://sumedh-inamdar.github.io/tic-tac-toe/',
+    github: 'https://github.com/sumedh-inamdar/tic-tac-toe'
+  },
+  {
+    name: 'Library',
+    description:
+      'Library web app that allows user to add, delete and modify books in a viewable library',
+    tech: ['Vanilla JS', 'localStorage'],
+    link: 'https://sumedh-inamdar.github.io/library/',
+    github: 'https://github.com/sumedh-inamdar/library'
+  },
+  {
+    name: 'Calculator',
+    description:
+      'Supports basic operators + exponents, factorials, percent calc, negation. Multi display and full keyboard support.',
+    tech: ['Vanilla JS', 'CSS', 'HTML'],
+    link: 'https://sumedh-inamdar.github.io/calculator/',
+    github: 'https://github.com/sumedh-inamdar/calculator'
+  },
+  {
+    name: 'Etch-A-Sketch',
+    description:
+      'User hovers cursor to fill in cells that become darker with every pass. Grid resolution adjustable.',
+    tech: ['Vanilla JS', 'CSS', 'HTML'],
+    link: 'https://sumedh-inamdar.github.io/etch-a-sketch/',
+    github: 'https://github.com/sumedh-inamdar/etch-a-sketch'
+  },
+  {
+    name: 'Ultimate RPS',
+    description:
+      'Rock Paper Scissors played against the computer. First to five wins.',
+    tech: ['Vanilla JS', 'CSS', 'HTML'],
+    link: 'https://sumedh-inamdar.github.io/rock-paper-scissors/',
+    github: 'https://github.com/sumedh-inamdar/rock-paper-scissors'
   }
 ];
