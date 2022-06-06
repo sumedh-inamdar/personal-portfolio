@@ -17,7 +17,7 @@ export default function Projects() {
           <FeatureProj key={project.name} data={project} />
         ))}
       </ul>
-      <div className="space-y-6 mb-6">
+      <div className="space-y-6 mb-12 md:mb-24">
         <h2 className="text-2xl font-bold tracking-tighter w-full text-center">
           Other Notable Projects
         </h2>
