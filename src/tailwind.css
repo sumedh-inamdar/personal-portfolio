@@ -12,6 +12,9 @@
   input::placeholder, textarea::placeholder {
     @apply text-darkBlue opacity-50
   }
+  textarea:focus, input:focus{
+    outline: none;
+}
 }
 @layer components {
   

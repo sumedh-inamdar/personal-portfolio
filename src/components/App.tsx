@@ -6,6 +6,9 @@ import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getFirebaseConfig } from '../firebase-config';
 
 export default function App() {
   return (
@@ -21,3 +24,7 @@ export default function App() {
     </div>
   );
 }
+
+const firebaseAppConfig = getFirebaseConfig();
+const app = initializeApp(firebaseAppConfig);
+export const db = getFirestore(app);
