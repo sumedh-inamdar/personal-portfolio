@@ -12,9 +12,9 @@ interface dataProps {
 export default function RegularProj({ data }: dataProps) {
   return (
     <div className="flex flex-col p-6 text-left bg-navyBlue space-y-7">
-      <div className="flex justify-between">
-        <h3 className="font-bold">{data.name}</h3>
-        <div className="flex space-x-3 items-center">
+      <div className="flex justify-between flex-wrap">
+        <h3 className="font-bold mr-2 mb-2">{data.name}</h3>
+        <div className="flex space-x-3 items-center mb-2">
           <a
             href={data.github}
             aria-label="External Link"
@@ -55,7 +55,7 @@ export default function RegularProj({ data }: dataProps) {
         </div>
       </div>
       <p className="flex-1 text-base">{data.description}</p>
-      <div className="text-sm flex flex-wrap">
+      <div className="text-sm flex gap-1 flex-wrap">
         {data.tech.map((tech) => (
           <FeatureTech key={tech} name={tech} />
         ))}

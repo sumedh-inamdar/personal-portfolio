@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-lg md:text-xl;
+    @apply text-lg md:text-xl bg-darkBlue text-gold;
   }
   input, textarea {
     @apply px-2 py-1 text-base bg-yellow rounded-lg text-darkBlue
@@ -19,20 +19,20 @@
 @layer components {
   
   .btn-primary {
-    @apply border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all
+    @apply border-gold border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all
   }
   .projWrap:nth-child(odd) video {
-    grid-area: 1 / 1 / 7 / 9;
+    grid-area: 1 / 1 / 7 / 8;
   }
   .projWrap:nth-child(even) video {
-    grid-area: 1 / 5 / 7 / 13;
+    grid-area: 1 / 6 / 7 / 13;
   }
   .projWrap:nth-child(odd) .projData {
-    grid-area: 2 / 5 / 7 / 13;
+    grid-area: 2 / 7 / 7 / 13;
     @apply text-left md:text-right;
   }
   .projWrap:nth-child(even) .projData {
-    grid-area: 2 / 1 / 7 / 9;
+    grid-area: 2 / 1 / 7 / 7;
   }
   .projWrap:nth-child(odd) .projTech {
     @apply justify-start md:justify-end;

@@ -4,7 +4,7 @@ import { db } from '../App';
 import SubmitModal from './SubmitModal';
 
 export default function Contact() {
-  const [viewModal, setViewModal] = useState(true);
+  const [viewModal, setViewModal] = useState(false);
 
   async function formSubmit(event: SyntheticEvent) {
     event.preventDefault();

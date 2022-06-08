@@ -12,7 +12,7 @@ import { getFirebaseConfig } from '../firebase-config';
 
 export default function App() {
   return (
-    <div className="bg-darkBlue text-gold">
+    <div>
       <Header />
       <Main>
         <About />
