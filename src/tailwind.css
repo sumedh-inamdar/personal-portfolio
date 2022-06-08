@@ -29,18 +29,17 @@
   }
   .projWrap:nth-child(odd) .projData {
     grid-area: 2 / 5 / 7 / 13;
+    @apply text-left md:text-right;
   }
   .projWrap:nth-child(even) .projData {
     grid-area: 2 / 1 / 7 / 9;
   }
-  .projWrap:nth-child(odd) .projName {
-    text-align: right;
+  .projWrap:nth-child(odd) .projTech {
+    @apply justify-start md:justify-end;
   }
-  .projWrap:nth-child(even) .projName {
-    text-align: left;
-  }
-  .projWrap:nth-child(odd) .projLinks {
-    justify-content: flex-end;
+  .projWrap:nth-child(odd) .projLinks
+  {
+    @apply justify-end;
   }
   .projWrap:nth-child(even) .projLinks {
     @apply justify-end md:justify-start;

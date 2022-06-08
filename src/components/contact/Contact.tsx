@@ -1,9 +1,10 @@
 import React, { SyntheticEvent, useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../App';
+import SubmitModal from './SubmitModal';
 
 export default function Contact() {
-  const [viewModal, setViewModal] = useState(false);
+  const [viewModal, setViewModal] = useState(true);
 
   async function formSubmit(event: SyntheticEvent) {
     event.preventDefault();
@@ -13,7 +14,8 @@ export default function Contact() {
         name: (document.querySelector('#fullName') as HTMLInputElement).value,
         email: (document.querySelector('#userEmail') as HTMLInputElement).value,
         message: (document.querySelector('#userMessage') as HTMLTextAreaElement)
-          .value
+          .value,
+        timestamp: new Date().toString()
       });
       console.log('Document written with ID:', docRef.id);
       setViewModal(true);
@@ -26,6 +28,7 @@ export default function Contact() {
 
   return (
     <section>
+      {viewModal && <SubmitModal setViewModal={setViewModal} />}
       <div className="flex items-center w-full mb-6">
         <h2 className="text-3xl font-bold tracking-tighter mr-4">Contact</h2>
         <div className="flex-1 h-px bg-gold"></div>

@@ -37,7 +37,7 @@ export default function FeatureProj({ data }: dataProps) {
         <div className="bg-yellow text-navyBlue text-base p-2 md:p-6">
           {data.description}
         </div>
-        <div className="flex flex-wrap text-sm bg-gold text-navyBlue p-2 md:p-6 italic">
+        <div className="projTech flex flex-wrap text-sm bg-gold text-navyBlue p-2 md:p-6 italic">
           {data.tech.map((tech) => (
             <FeatureTech key={tech} name={tech} />
           ))}
