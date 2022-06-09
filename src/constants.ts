@@ -13,19 +13,19 @@ import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
 export const navConfig = [
   {
     name: 'About',
-    url: '/#about'
+    url: '#about'
   },
   {
     name: 'Skills',
-    url: '/#skills'
+    url: '#skills'
   },
   {
     name: 'Projects',
-    url: '/#projects'
+    url: '#projects'
   },
   {
     name: 'Contact',
-    url: '/#contact'
+    url: '#contact'
   }
 ];
 

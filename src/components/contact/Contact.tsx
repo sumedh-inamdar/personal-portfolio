@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section>
+    <section id="contact">
       {viewModal && <SubmitModal setViewModal={setViewModal} />}
       <div className="flex items-center w-full mb-6">
         <h2 className="text-3xl font-bold tracking-tighter mr-4">Contact</h2>

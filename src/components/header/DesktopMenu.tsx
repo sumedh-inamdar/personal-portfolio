@@ -4,9 +4,11 @@ import { navConfig } from '../../constants';
 export default function DesktopMenu() {
   return (
     <nav className="hidden md:flex">
-      <ul className="flex space-x-6">
+      <ul className="flex space-x-6 text-base">
         {navConfig.map((navItem) => (
-          <li key={navItem.name}>{navItem.name}</li>
+          <a key={navItem.name} href={navItem.url}>
+            <li>{navItem.name}</li>
+          </a>
         ))}
       </ul>
     </nav>

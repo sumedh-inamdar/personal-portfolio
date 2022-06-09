@@ -34,7 +34,7 @@ export default function FeatureProj({ data }: dataProps) {
         <div className="projName text-2xl font-extrabold tracking-wider">
           {data.name}
         </div>
-        <div className="bg-yellow text-navyBlue text-base p-2 md:p-6">
+        <div className="bg-goldOpaque text-darkBlue text-base p-2 md:p-6">
           {data.description}
         </div>
         <div className="projTech flex flex-wrap text-sm bg-navyBlueOpaque text-navyBlue p-2 md:p-6 italic">

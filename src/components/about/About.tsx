@@ -4,7 +4,7 @@ import portrait from '../../assets/portrait.jpg';
 
 export default function About() {
   return (
-    <section>
+    <section id="about">
       <div className="flex items-center w-full mb-6">
         <h2 className="text-3xl font-bold tracking-tighter mr-4">About</h2>
         <div className="flex-1 h-px bg-gold"></div>

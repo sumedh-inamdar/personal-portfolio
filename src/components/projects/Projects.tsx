@@ -7,7 +7,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <section>
+    <section id="projects">
       <div className="flex items-center w-full mb-6">
         <h2 className="text-3xl font-bold tracking-tighter mr-4">Projects</h2>
         <div className="flex-1 h-px bg-gold"></div>
