@@ -13,19 +13,23 @@ import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
 export const navConfig = [
   {
     name: 'About',
-    url: '#about'
+    url: '#about',
+    delay: 'delay200'
   },
   {
     name: 'Skills',
-    url: '#skills'
+    url: '#skills',
+    delay: 'delay400'
   },
   {
     name: 'Projects',
-    url: '#projects'
+    url: '#projects',
+    delay: 'delay600'
   },
   {
     name: 'Contact',
-    url: '#contact'
+    url: '#contact',
+    delay: 'delay800'
   }
 ];
 
@@ -120,7 +124,8 @@ export const regularProjects = [
       'Memory card game built using React Hooks. User must select unique cards each turn (max of 12) to test their memory.',
     tech: ['React', 'React Hooks', 'CSS'],
     link: 'https://sumedh-inamdar.github.io/memory-card/',
-    github: 'https://github.com/sumedh-inamdar/memory-card'
+    github: 'https://github.com/sumedh-inamdar/memory-card',
+    delay: 'delay0'
   },
   {
     name: 'Weather App',
@@ -128,7 +133,8 @@ export const regularProjects = [
       'Provides real-time weather information of user supplied location using the OpenWeather API',
     tech: ['Async JS', 'APIs'],
     link: 'https://sumedh-inamdar.github.io/weather-app/',
-    github: 'https://github.com/sumedh-inamdar/weather-app'
+    github: 'https://github.com/sumedh-inamdar/weather-app',
+    delay: 'delay100'
   },
   {
     name: 'To-do List',
@@ -136,7 +142,8 @@ export const regularProjects = [
       'To-do list application encompassing JS OOP common principles / best practices. Layout and design inspired by Todoist (todoist.com)',
     tech: ['Vanilla JS', 'SOLID principles'],
     link: 'https://sumedh-inamdar.github.io/Todo-List/',
-    github: 'https://github.com/sumedh-inamdar/Todo-List'
+    github: 'https://github.com/sumedh-inamdar/Todo-List',
+    delay: 'delay200'
   },
   {
     name: 'Tic Tac Toe',
@@ -144,7 +151,8 @@ export const regularProjects = [
       'User playable against computer or human. Minimax AI algorithm chosen for shortest depth.',
     tech: ['Factory Functions', 'Module Patterns'],
     link: 'https://sumedh-inamdar.github.io/tic-tac-toe/',
-    github: 'https://github.com/sumedh-inamdar/tic-tac-toe'
+    github: 'https://github.com/sumedh-inamdar/tic-tac-toe',
+    delay: 'delay0'
   },
   {
     name: 'Library',
@@ -152,7 +160,8 @@ export const regularProjects = [
       'Library web app that allows user to add, delete and modify books in a viewable library',
     tech: ['Vanilla JS', 'localStorage'],
     link: 'https://sumedh-inamdar.github.io/library/',
-    github: 'https://github.com/sumedh-inamdar/library'
+    github: 'https://github.com/sumedh-inamdar/library',
+    delay: 'delay100'
   },
   {
     name: 'Calculator',
@@ -160,7 +169,8 @@ export const regularProjects = [
       'Supports basic operators + exponents, factorials, percent calc, negation. Multi display and full keyboard support.',
     tech: ['Vanilla JS', 'CSS', 'HTML'],
     link: 'https://sumedh-inamdar.github.io/calculator/',
-    github: 'https://github.com/sumedh-inamdar/calculator'
+    github: 'https://github.com/sumedh-inamdar/calculator',
+    delay: 'delay200'
   },
   {
     name: 'Etch-A-Sketch',
@@ -168,7 +178,8 @@ export const regularProjects = [
       'User hovers cursor to fill in cells that become darker with every pass. Grid resolution adjustable.',
     tech: ['Vanilla JS', 'CSS', 'HTML'],
     link: 'https://sumedh-inamdar.github.io/etch-a-sketch/',
-    github: 'https://github.com/sumedh-inamdar/etch-a-sketch'
+    github: 'https://github.com/sumedh-inamdar/etch-a-sketch',
+    delay: 'delay000'
   },
   {
     name: 'Ultimate RPS',
@@ -176,6 +187,7 @@ export const regularProjects = [
       'Rock Paper Scissors played against the computer. First to five wins.',
     tech: ['Vanilla JS', 'CSS', 'HTML'],
     link: 'https://sumedh-inamdar.github.io/rock-paper-scissors/',
-    github: 'https://github.com/sumedh-inamdar/rock-paper-scissors'
+    github: 'https://github.com/sumedh-inamdar/rock-paper-scissors',
+    delay: 'delay100'
   }
 ];

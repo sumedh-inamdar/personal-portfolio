@@ -10,10 +10,10 @@
     @apply text-lg md:text-xl bg-darkBlue text-gold;
   }
   input, textarea {
-    @apply px-2 py-1 text-base bg-yellow rounded-lg text-darkBlue
+    @apply px-2 py-1 text-base bg-yellow rounded-lg text-darkBlue;
   }
   input::placeholder, textarea::placeholder {
-    @apply text-darkBlue opacity-50
+    @apply text-darkBlue opacity-50;
   }
   textarea:focus, input:focus{
     outline: none;
@@ -22,20 +22,23 @@
 @layer components {
   
   .btn-primary {
-    @apply border-gold border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all
+    @apply border-gold border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all;
   }
   .projWrap:nth-child(odd) video {
     grid-area: 1 / 1 / 7 / 8;
+    @apply animateFadeinLeft;
   }
   .projWrap:nth-child(even) video {
     grid-area: 1 / 6 / 7 / 13;
+    @apply animateFadeinRight;
   }
   .projWrap:nth-child(odd) .projData {
     grid-area: 2 / 7 / 7 / 13;
-    @apply text-left md:text-right;
+    @apply text-left md:text-right animateFadeinRight;
   }
   .projWrap:nth-child(even) .projData {
     grid-area: 2 / 1 / 7 / 7;
+    @apply animateFadeinLeft;
   }
   .projWrap:nth-child(odd) .projTech {
     @apply justify-start md:justify-end;
@@ -48,32 +51,69 @@
     @apply justify-end md:justify-start;
   }
   .typewriter {
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
     letter-spacing: 0.15em;
-  }
-  .animateSlide {
-    animation: slide 10.5s steps(3) infinite;
-  }
-  .animateBlink {
-    animation: blink-caret 0.75s step-end infinite;
-  }
-  .animateTyping {
-    animation: typing 3.5s steps(19, end) infinite;
   }
   .typeEffect {
     animation: typing 10.5s steps(19, end) infinite,
       blink-caret 0.75s step-end infinite;
   }
-  .typeEffect-2 {
-    animation: typing 3.5s steps(19, end) infinite,
-      blink-caret 0.75s step-end infinite;
+  .animateSlide {
+    animation: slide 10.5s steps(3) infinite;
   }
-  .typeEffect-3 {
-    animation: typing 3.5s steps(19, end) infinite,
-      blink-caret 0.75s step-end infinite;
+  .animateFadeinUp {
+    animation: fade-in-up 400ms ease-in-out forwards;
   }
-  /* The typing effect */
+  .animateFadeinDown {
+    animation: fade-in-down 400ms ease-in-out forwards;
+  }
+  .animateFadeinLeft {
+    animation: fade-in-left 400ms ease-in-out forwards;
+  }
+  .animateFadeinRight {
+    animation: fade-in-right 400ms ease-in-out forwards;
+  }
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   @keyframes typing {
     0%,
     33%,
@@ -111,4 +151,44 @@
       border-color: orange;
     }
   }
+}
+
+@layer utilities {
+  .delay0 {
+    animation-delay: 0ms;
+  }
+  .delay100 {
+    animation-delay: 100ms;
+  }
+  .delay200 {
+    animation-delay: 200ms;
+  }
+  .delay300 {
+    animation-delay: 300ms;
+  }
+  .delay400 {
+    animation-delay: 400ms;
+  }
+  .delay500 {
+    animation-delay: 500ms;
+  }
+  .delay600 {
+    animation-delay: 600ms;
+  }
+  .delay700 {
+    animation-delay: 700ms;
+  }
+  .delay800 {
+    animation-delay: 800ms;
+  }
+  .delay900 {
+    animation-delay: 900ms;
+  }
+  .delay1000 {
+    animation-delay: 1000ms;
+  }
+  .delay1200 {
+    animation-delay: 1200ms;
+  }
+
 }

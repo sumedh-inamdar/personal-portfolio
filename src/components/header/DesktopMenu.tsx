@@ -6,7 +6,10 @@ export default function DesktopMenu() {
     <nav className="hidden md:flex">
       <ul className="flex space-x-6 text-base">
         {navConfig.map((navItem) => (
-          <a key={navItem.name} href={navItem.url}>
+          <a
+            key={navItem.name}
+            href={navItem.url}
+            className={`opacity-0 animateFadeinDown ${navItem.delay}`}>
             <li>{navItem.name}</li>
           </a>
         ))}
