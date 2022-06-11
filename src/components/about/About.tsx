@@ -2,6 +2,7 @@ import React from 'react';
 import { about } from '../../constants';
 import portrait from '../../assets/portrait.jpg';
 import { useInView } from 'react-intersection-observer';
+import SectionHeader from '../common/SectionHeader';
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -13,14 +14,9 @@ export default function About() {
       <div className="min-h-[400px]" ref={ref}>
         {inView && (
           <div>
-            <div className="flex items-center w-full mb-6 animateFadeinUp opacity-0">
-              <h2 className="text-3xl font-bold tracking-tighter mr-4">
-                About
-              </h2>
-              <div className="flex-1 h-px bg-gold"></div>
-            </div>
-            <div className="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row my-12 md:my-16">
-              <div className="flex-2 space-y-6">
+            <SectionHeader title="About" />
+            <div className=" flex flex-col md:flex-row items-center space-y-6 md:space-y-0 my-12 md:my-16">
+              <div className="flex-2 space-y-6 text-lg leading-relaxed">
                 <p className="animateFadeinUp delay100 opacity-0">{about.p1}</p>
                 <p className="animateFadeinUp delay100 opacity-0">{about.p2}</p>
                 <p className="animateFadeinUp delay100 opacity-0">{about.p3}</p>
@@ -29,7 +25,7 @@ export default function About() {
                 <img
                   src={portrait}
                   alt="sumedh's portrait"
-                  className="sepia hover:sepia-0 shadow-gold rounded hover:shadow-goldShort transition-all max-w-[300px] md:max-w-full"
+                  className="grayscale hover:grayscale-0 shadow-start shadow-shade5 rounded hover:shadow-finish hover:shadow-shade8 transition-all max-w-[300px] md:max-w-full"
                 />
               </div>
             </div>

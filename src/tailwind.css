@@ -7,20 +7,22 @@
     @apply scroll-smooth scroll-pt-16;
   }
   body {
-    @apply text-lg md:text-xl bg-darkBlue text-gold;
+    @apply text-lg md:text-xl bg-shade0 text-shade8;
   }
-  input, textarea {
+  input,
+  textarea {
     @apply px-2 py-1 text-base bg-yellow rounded-lg text-darkBlue;
   }
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     @apply text-darkBlue opacity-50;
   }
-  textarea:focus, input:focus{
+  textarea:focus,
+  input:focus {
     outline: none;
-}
+  }
 }
 @layer components {
-  
   .btn-primary {
     @apply border-gold border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all;
   }
@@ -43,16 +45,14 @@
   .projWrap:nth-child(odd) .projTech {
     @apply justify-start md:justify-end;
   }
-  .projWrap:nth-child(odd) .projLinks
-  {
+  .projWrap:nth-child(odd) .projLinks {
     @apply justify-end;
   }
   .projWrap:nth-child(even) .projLinks {
     @apply justify-end md:justify-start;
   }
   .typewriter {
-    border-right: 0.15em solid orange;
-    white-space: nowrap;
+    @apply border-shade5 border-r-[0.15em] border-solid whitespace-nowrap;
     letter-spacing: 0.15em;
   }
   .typeEffect {
@@ -145,10 +145,10 @@
   @keyframes blink-caret {
     from,
     to {
-      border-color: transparent;
+      @apply border-transparent;
     }
     50% {
-      border-color: orange;
+      @apply border-shade5;
     }
   }
 }
@@ -190,5 +190,4 @@
   .delay1200 {
     animation-delay: 1200ms;
   }
-
 }

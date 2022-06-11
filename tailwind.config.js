@@ -3,6 +3,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        shade0: '#f8f9fa',
+        shade1: '#e9ecef',
+        shade2: '#dee2e6',
+        shade3: '#ced4da',
+        shade4: '#adb5bd',
+        shade5: '#6c757d',
+        shade6: '#495057',
+        shade7: '#343a40',
+        shade8: '#212529',
+        blue: '#3b82f6',
         gold: '#ffc300',
         goldOpaque: 'rgba(255, 195, 0, 0.9)',
         yellow: '#ffd60a',
@@ -16,8 +26,8 @@ module.exports = {
         2: '2 1 0%'
       },
       boxShadow: {
-        gold: '20px 25px gold',
-        goldShort: '10px 15px gold'
+        start: '25px 25px',
+        finish: '15px 15px'
       }
     }
   },
