@@ -21,7 +21,7 @@ export default function RegularProj({ data }: dataProps) {
     <div ref={ref} className="min-h-[300px]">
       {inView && (
         <div
-          className={`${data.delay} animateFadeinUp opacity-0 h-full flex flex-col space-y-7 p-6 text-left bg-navyBlue`}>
+          className={`${data.delay} animateFadeinUp opacity-0 h-full flex flex-col space-y-7 p-6 text-left bg-shade0 shadow-xl border-2`}>
           <div className="flex justify-between flex-wrap">
             <h3 className="font-bold mr-2 mb-2">{data.name}</h3>
             <div className="flex space-x-3 items-center mb-2">
@@ -30,7 +30,7 @@ export default function RegularProj({ data }: dataProps) {
                 aria-label="External Link"
                 rel="noreferrer"
                 target="_blank"
-                className="hover:scale-110 hover:text-yellow transition-all">
+                className="hover:scale-110 hover:text-blue transition-all">
                 <svg
                   width="24"
                   height="24"
@@ -49,7 +49,7 @@ export default function RegularProj({ data }: dataProps) {
                 aria-label="External Link"
                 rel="noreferrer"
                 target="_blank"
-                className="hover:scale-110 hover:text-yellow transition-all">
+                className="hover:scale-110 hover:text-blue transition-all">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

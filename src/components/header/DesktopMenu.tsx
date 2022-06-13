@@ -9,7 +9,7 @@ export default function DesktopMenu() {
           <a
             key={navItem.name}
             href={navItem.url}
-            className={`opacity-0 animateFadeinDown ${navItem.delay}`}>
+            className={`opacity-0 animateFadeinDown ${navItem.delay} hover:text-blue`}>
             <li>{navItem.name}</li>
           </a>
         ))}

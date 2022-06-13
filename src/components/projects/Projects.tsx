@@ -3,6 +3,7 @@ import { featuredProjects, regularProjects } from '../../constants';
 import FeatureProj from './FeatureProj';
 import RegularProj from './RegularProj';
 import { useInView } from 'react-intersection-observer';
+import SectionHeader from '../common/SectionHeader';
 
 export default function Projects() {
   const [showMore, setShowMore] = useState(false);
@@ -11,14 +12,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="min-h-[36px]" ref={inViewRef1}>
-        {inView1 && (
-          <div className="flex items-center w-full animateFadeinUp opacity-0">
-            <h2 className="text-3xl font-bold tracking-tighter mr-4">
-              Projects
-            </h2>
-            <div className="flex-1 h-px bg-gold"></div>
-          </div>
-        )}
+        {inView1 && <SectionHeader title="Projects" />}
       </div>
       <ul className="my-12 md:my-16 md:mb-12 space-y-0 md:space-y-20">
         {featuredProjects.map((project) => (

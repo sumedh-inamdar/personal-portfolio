@@ -5,7 +5,7 @@ export default function Footer() {
     <section>
       <div className="text-center text-sm py-2">
         <a
-          className="hover:text-yellow transition-all"
+          className="hover:text-blue transition-all"
           aria-label="External Link"
           rel="noreferrer"
           target="_blank"

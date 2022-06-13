@@ -3,6 +3,7 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../App';
 import SubmitModal from './SubmitModal';
 import { useInView } from 'react-intersection-observer';
+import SectionHeader from '../common/SectionHeader';
 
 export default function Contact() {
   const [viewModal, setViewModal] = useState(false);
@@ -38,19 +39,14 @@ export default function Contact() {
       <div ref={ref} className="min-h-[400px]">
         {inView && (
           <div>
-            <div className="opacity-0 animateFadeinUp flex items-center w-full mb-6">
-              <h2 className="text-3xl font-bold tracking-tighter mr-4">
-                Contact
-              </h2>
-              <div className="flex-1 h-px bg-gold"></div>
-            </div>
+            <SectionHeader title="Contact" />
             <div className="flex flex-col md:flex-row my-12 space-y-12 md:space-y-0">
               <div className="opacity-0 animateFadeinUp delay100 flex-1 flex flex-col space-y-12 text-left px-6">
                 <div>{`I'm currently open to opportunities as a front-end developer. Please
         drop me a message if you'd like to chat!`}</div>
                 <div className="flex justify-around">
                   <a
-                    className="hover:scale-110 hover:text-yellow transition-all"
+                    className="hover:scale-110 text-shade0 rounded-lg hover:border-blue hover:border-2 transition-all"
                     aria-label="External Link"
                     rel="noreferrer"
                     target="_blank"
@@ -63,7 +59,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    className="hover:scale-110 hover:text-yellow transition-all"
+                    className="hover:scale-110 hover:text-blue transition-all"
                     aria-label="External Link"
                     rel="noreferrer"
                     target="_blank"
@@ -81,7 +77,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    className="hover:scale-110 hover:text-yellow transition-all"
+                    className="hover:scale-110 hover:text-blue transition-all"
                     aria-label="External Link"
                     rel="noreferrer"
                     target="_blank"
@@ -112,7 +108,7 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <label htmlFor="fullName">Your Name</label>
                   <input
-                    className="focus:pl-4 transition-all"
+                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
                     id="fullName"
                     type="text"
                     placeholder="Bob Sacamano"
@@ -122,7 +118,7 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <label htmlFor="userEmail">Email Address</label>
                   <input
-                    className="focus:pl-4 transition-all"
+                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
                     type="email"
                     id="userEmail"
                     placeholder="bobs@kramerica.com"
@@ -133,7 +129,7 @@ export default function Contact() {
                   <label htmlFor="userMessage">Message</label>
                   <textarea
                     id="userMessage"
-                    className="focus:pl-4 transition-all"
+                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
                     rows={5}
                     cols={20}
                     placeholder={`Hey! I'd love to connect...`}></textarea>

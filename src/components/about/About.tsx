@@ -25,7 +25,7 @@ export default function About() {
                 <img
                   src={portrait}
                   alt="sumedh's portrait"
-                  className="grayscale hover:grayscale-0 shadow-start shadow-shade5 rounded hover:shadow-finish hover:shadow-shade8 transition-all max-w-[300px] md:max-w-full"
+                  className="opacity-75 hover:opacity-100 shadow-start shadow-shade5 rounded hover:shadow-finish hover:shadow-shade8 transition-all max-w-[300px] md:max-w-full"
                 />
               </div>
             </div>

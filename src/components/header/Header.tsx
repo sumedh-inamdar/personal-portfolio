@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 
 export default function Header() {
   return (
-    <header className="transition-all duration-300 ease-in z-50 fixed inset-x-0 top-0 h-16 flex justify-between px-10 items-center">
+    <header className="transition-all duration-300 ease-in z-50 fixed inset-x-0 top-0 h-16 flex justify-between px-10 items-center bg-shade0">
       <div className="opacity-0 animateFadeinDown">
         <a href="#top">
           <svg

@@ -44,10 +44,10 @@ export default function FeatureProj({ data }: dataProps) {
           <div className="projName text-2xl font-extrabold tracking-wider">
             {data.name}
           </div>
-          <div className="bg-goldOpaque text-darkBlue text-base p-2 md:p-6">
+          <div className="bg-shade0Opaque text-darkBlue text-base p-2 md:p-6">
             {data.description}
           </div>
-          <div className="projTech flex flex-wrap text-sm bg-navyBlueOpaque text-navyBlue p-2 md:p-6 italic">
+          <div className="projTech flex flex-wrap text-sm bg-shade1Opaque p-2 md:p-6 italic">
             {data.tech.map((tech) => (
               <FeatureTech key={tech} name={tech} />
             ))}
@@ -58,7 +58,7 @@ export default function FeatureProj({ data }: dataProps) {
               aria-label="External Link"
               rel="noreferrer"
               target="_blank"
-              className="hover:scale-110 hover:text-yellow transition-all">
+              className="hover:scale-110 hover:text-blue transition-all">
               <svg
                 width="24"
                 height="24"
@@ -77,7 +77,7 @@ export default function FeatureProj({ data }: dataProps) {
               aria-label="External Link"
               rel="noreferrer"
               target="_blank"
-              className="hover:scale-110 hover:text-yellow transition-all">
+              className="hover:scale-110 hover:text-blue transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

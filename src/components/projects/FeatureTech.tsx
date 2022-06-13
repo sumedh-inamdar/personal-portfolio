@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FeatureTech({ name }: { name: string }) {
   return (
-    <div className="m-0.5 px-2 py-1 bg-darkBlue text-gold border-2 border-gold rounded-lg">
+    <div className="m-0.5 px-2 py-1 bg-shade0 border-2 border-shade8 rounded-lg">
       {name}
     </div>
   );

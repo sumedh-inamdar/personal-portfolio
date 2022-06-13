@@ -24,7 +24,7 @@
 }
 @layer components {
   .btn-primary {
-    @apply border-gold border-2 px-6 py-2 rounded-lg text-base hover:bg-gold hover:text-darkBlue transition-all;
+    @apply border-shade8 border-2 px-6 py-2 rounded-lg text-base hover:bg-blue hover:text-shade0 hover:border-shade0 transition-all;
   }
   .projWrap:nth-child(odd) video {
     grid-area: 1 / 1 / 7 / 8;

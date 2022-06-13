@@ -4,7 +4,9 @@ module.exports = {
     extend: {
       colors: {
         shade0: '#f8f9fa',
+        shade0Opaque: 'rgba(248, 249, 250, 0.9)',
         shade1: '#e9ecef',
+        shade1Opaque: 'rgba(233, 236, 239, 0.5)',
         shade2: '#dee2e6',
         shade3: '#ced4da',
         shade4: '#adb5bd',
@@ -12,7 +14,7 @@ module.exports = {
         shade6: '#495057',
         shade7: '#343a40',
         shade8: '#212529',
-        blue: '#3b82f6',
+        blue: '#2563eb',
         gold: '#ffc300',
         goldOpaque: 'rgba(255, 195, 0, 0.9)',
         yellow: '#ffd60a',
