@@ -39,8 +39,8 @@ export default function About() {
                   <ExtLink
                     url="https://www.brocade.com"
                     title="a networking hardware company"
-                  />{' '}
-                  (later acquired), as well as hands on product development at{' '}
+                  />
+                  , as well as prototype development at{' '}
                   <ExtLink
                     url="https://www.crunchbase.com/organization/zyomyx-inc"
                     title="a medical device startup"
@@ -56,7 +56,7 @@ export default function About() {
                 <img
                   src={portrait}
                   alt="sumedh's portrait"
-                  className="opacity-75 hover:opacity-100 shadow-start shadow-shade5 rounded hover:shadow-finish hover:shadow-shade8 transition-all max-w-[300px] md:max-w-full"
+                  className="opacity-75 hover:opacity-100 shadow-start shadow-shade8 rounded hover:shadow-finish hover:shadow-blue transition-all max-w-[300px] md:max-w-full"
                 />
               </div>
             </div>

@@ -108,7 +108,6 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <label htmlFor="fullName">Your Name</label>
                   <input
-                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
                     id="fullName"
                     type="text"
                     placeholder="Bob Sacamano"
@@ -118,7 +117,6 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <label htmlFor="userEmail">Email Address</label>
                   <input
-                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-blue focus:text-shade0"
                     type="email"
                     id="userEmail"
                     placeholder="bobs@kramerica.com"
@@ -129,10 +127,10 @@ export default function Contact() {
                   <label htmlFor="userMessage">Message</label>
                   <textarea
                     id="userMessage"
-                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
                     rows={5}
                     cols={20}
-                    placeholder={`Hey! I'd love to connect...`}></textarea>
+                    placeholder={`Hey! I'd love to connect...`}
+                    required></textarea>
                 </div>
                 <button className="btn-primary w-fit m-auto" type="submit">
                   Submit

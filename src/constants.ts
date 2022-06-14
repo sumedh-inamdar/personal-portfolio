@@ -13,22 +13,22 @@ import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
 
 export const navConfig = [
   {
-    name: 'ABOUT',
+    name: 'About',
     url: '#about',
     delay: 'delay200'
   },
   {
-    name: 'SKILLS',
+    name: 'Skills',
     url: '#skills',
     delay: 'delay400'
   },
   {
-    name: 'PROJECTS',
+    name: 'Projects',
     url: '#projects',
     delay: 'delay600'
   },
   {
-    name: 'CONTACT',
+    name: 'Contact',
     url: '#contact',
     delay: 'delay800'
   }

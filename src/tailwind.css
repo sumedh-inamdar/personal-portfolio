@@ -11,11 +11,14 @@
   }
   input,
   textarea {
-    @apply px-2 py-1 text-base bg-shade1 rounded-lg text-darkBlue;
+    @apply px-2 py-1 focus:pl-4 transition-all text-base border border-shade8 rounded-lg hover:bg-blueOpaque focus:bg-blue focus:text-shade0;
   }
   input::placeholder,
   textarea::placeholder {
-    @apply text-darkBlue opacity-50;
+    @apply text-shade8 opacity-60 hover:text-shade0 focus:text-shade0;
+  }
+  input:focus::placeholder, textarea:focus::placeholder {
+    @apply text-shade0;
   }
   textarea:focus,
   input:focus {
