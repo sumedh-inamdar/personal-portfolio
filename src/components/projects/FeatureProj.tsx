@@ -1,6 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import FeatureTech from './FeatureTech';
 import { useInView } from 'react-intersection-observer';
+import ExtLink from '../common/ExtLink';
 
 interface dataProps {
   data: {
@@ -41,13 +42,19 @@ export default function FeatureProj({ data }: dataProps) {
       )}
       {inView && (
         <div className="opacity-0 projData drop-shadow-xl flex flex-col z-10">
-          <div className="projName text-2xl font-extrabold tracking-wider">
-            {data.name}
+          <div className="projName text-2xl font-bold hover:text-blue transition-all">
+            <a
+              href={data.link}
+              aria-label="External Link"
+              rel="noreferrer"
+              target="_blank">
+              {data.name}
+            </a>
           </div>
-          <div className="bg-shade0Opaque text-darkBlue text-base p-2 md:p-6">
+          <div className="bg-shade0Opaque text-darkBlue font-light text-base p-2 md:p-6">
             {data.description}
           </div>
-          <div className="projTech flex flex-wrap text-sm bg-shade1Opaque p-2 md:p-6 italic">
+          <div className="projTech flex flex-wrap text-sm bg-shade1Opaque hover:bg-blueOpaque transition-all p-2 md:p-6 italic">
             {data.tech.map((tech) => (
               <FeatureTech key={tech} name={tech} />
             ))}

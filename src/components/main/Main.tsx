@@ -11,17 +11,23 @@ export default function Main({ children }: MainProps) {
         <h1 className="text-5xl md:text-6xl tracking-tighter animateFadeinUp delay1000 opacity-0">
           <b className="">Sumedh</b> Inamdar
         </h1>
-        <h2 className="text-2xl flex items-center animateFadeinUp delay1200 opacity-0 text-shade5">
+        <h2 className="text-2xl font-light flex items-center animateFadeinUp delay1200 opacity-0 text-shade5">
           <div>{`> `}</div>
-          <ul className="ml-2 h-8 overflow-hidden typewriter typeEffect">
+          <ul className="ml-2 h-8 overflow-hidden typewriter typeEffect tracking-widest">
             <li className="relative top-0 animateSlide">
-              <span>front-end developer</span>
+              <span>
+                front-end <span className="text-blue">developer</span>
+              </span>
             </li>
             <li className="relative top-0 animateSlide">
-              <span>software engineer</span>
+              <span>
+                software <span className="text-blue">engineer</span>
+              </span>
             </li>
             <li className="relative top-0 animateSlide">
-              <span>tennis player</span>
+              <span>
+                <span className="text-blue">tennis</span> player
+              </span>
             </li>
           </ul>
         </h2>

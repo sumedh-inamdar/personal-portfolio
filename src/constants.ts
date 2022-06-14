@@ -6,28 +6,29 @@ import reactLogo from './assets/brandIcons/react.svg';
 import jestLogo from './assets/brandIcons/jest.svg';
 import webpackLogo from './assets/brandIcons/webpack.svg';
 import gitLogo from './assets/brandIcons/git.svg';
+import firebaseLogo from './assets/brandIcons/Firebase_Logo_Logomark.svg';
 import tennsCentrlClip from './assets/projectClips/clipOneH264.m4v';
 import cvMakerClip from './assets/projectClips/clipTwoH264.m4v';
 import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
 
 export const navConfig = [
   {
-    name: 'About',
+    name: 'ABOUT',
     url: '#about',
     delay: 'delay200'
   },
   {
-    name: 'Skills',
+    name: 'SKILLS',
     url: '#skills',
     delay: 'delay400'
   },
   {
-    name: 'Projects',
+    name: 'PROJECTS',
     url: '#projects',
     delay: 'delay600'
   },
   {
-    name: 'Contact',
+    name: 'CONTACT',
     url: '#contact',
     delay: 'delay800'
   }
@@ -36,7 +37,7 @@ export const navConfig = [
 export const about = {
   p1: `Hello! My name is Sumedh Inamdar and I enjoy building things for the web. I'm currently self-studying web development through the Odin Project.`,
   p2: 'Before embarking on a journey to becoming a self-taught software developer, I worked as an Engineering Program Manager at Apple where I managed the technical execution of Magsafe and several other wireless charging technologies.',
-  p3: 'Utilizing my background in Mechanical Engineering and hardware developement, I enjoy approaching problems with a creative and technical mindset.'
+  p3: 'Utilizing my engineering and product design background, I enjoy approaching problems with a creative and technical mindset.'
 };
 
 export const brandIcons = [
@@ -49,7 +50,7 @@ export const brandIcons = [
     src: cssLogo
   },
   {
-    name: 'Typescript / JS',
+    name: 'TypeScript / JS',
     src: typescriptLogo
   },
   {
@@ -71,6 +72,10 @@ export const brandIcons = [
   {
     name: 'Git',
     src: gitLogo
+  },
+  {
+    name: 'Firebase',
+    src: firebaseLogo
   }
 ];
 

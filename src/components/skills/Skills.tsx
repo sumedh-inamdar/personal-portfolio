@@ -15,7 +15,7 @@ export default function Skills() {
         {inView && (
           <div>
             <SectionHeader title="Skills" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-x-10 md:gap-x-16 my-12 md:my-16">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-x-10 lg:gap-x-16 my-12 lg:my-16">
               {brandIcons.map((icon) => (
                 <SkillItem key={icon.name} name={icon.name} src={icon.src} />
               ))}

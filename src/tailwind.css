@@ -7,11 +7,11 @@
     @apply scroll-smooth scroll-pt-16;
   }
   body {
-    @apply text-lg md:text-xl bg-shade0 text-shade8;
+    @apply font-sans text-lg md:text-xl bg-shade0 text-shade8;
   }
   input,
   textarea {
-    @apply px-2 py-1 text-base bg-yellow rounded-lg text-darkBlue;
+    @apply px-2 py-1 text-base bg-shade1 rounded-lg text-darkBlue;
   }
   input::placeholder,
   textarea::placeholder {
@@ -25,6 +25,9 @@
 @layer components {
   .btn-primary {
     @apply border-shade8 border-2 px-6 py-2 rounded-lg text-base hover:bg-blue hover:text-shade0 hover:border-shade0 transition-all;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4dc9e6] to-[#210cae];
   }
   .projWrap:nth-child(odd) video {
     grid-area: 1 / 1 / 7 / 8;
@@ -53,7 +56,6 @@
   }
   .typewriter {
     @apply border-shade5 border-r-[0.15em] border-solid whitespace-nowrap;
-    letter-spacing: 0.15em;
   }
   .typeEffect {
     animation: typing 10.5s steps(19, end) infinite,
@@ -119,19 +121,19 @@
     33%,
     66%,
     100% {
-      width: 0px;
+      width: 0em;
     }
     7.5%,
     25.5% {
-      width: 274px;
+      width: 10.8em;
     }
     40.5%,
     58.5% {
-      width: 245px;
+      width: 9.8em;
     }
     73.5%,
     91.5% {
-      width: 178px;
+      width: 7.1em;
     }
   }
 

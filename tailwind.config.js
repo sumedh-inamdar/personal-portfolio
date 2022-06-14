@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Helvetica', 'sans-serif']
+    },
     extend: {
       colors: {
         shade0: '#f8f9fa',
@@ -15,6 +18,7 @@ module.exports = {
         shade7: '#343a40',
         shade8: '#212529',
         blue: '#2563eb',
+        blueOpaque: 'rgba(37, 99, 235, 0.5)',
         gold: '#ffc300',
         goldOpaque: 'rgba(255, 195, 0, 0.9)',
         yellow: '#ffd60a',

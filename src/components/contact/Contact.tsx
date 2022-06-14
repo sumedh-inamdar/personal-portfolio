@@ -41,7 +41,7 @@ export default function Contact() {
           <div>
             <SectionHeader title="Contact" />
             <div className="flex flex-col md:flex-row my-12 space-y-12 md:space-y-0">
-              <div className="opacity-0 animateFadeinUp delay100 flex-1 flex flex-col space-y-12 text-left px-6">
+              <div className="opacity-0 animateFadeinUp delay100 flex-1 flex flex-col space-y-12 text-left px-6 font-light">
                 <div>{`I'm currently open to opportunities as a front-end developer. Please
         drop me a message if you'd like to chat!`}</div>
                 <div className="flex justify-around">
@@ -118,7 +118,7 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <label htmlFor="userEmail">Email Address</label>
                   <input
-                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-shade2"
+                    className="focus:pl-4 transition-all bg-shade1 hover:bg-shade2 focus:bg-blue focus:text-shade0"
                     type="email"
                     id="userEmail"
                     placeholder="bobs@kramerica.com"
