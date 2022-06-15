@@ -10,6 +10,9 @@ import firebaseLogo from './assets/brandIcons/Firebase_Logo_Logomark.svg';
 import tennsCentrlClip from './assets/projectClips/clipOneH264.m4v';
 import cvMakerClip from './assets/projectClips/clipTwoH264.m4v';
 import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
+import tennsCentrlPoster from './assets/projectClips/shoppingCartScreenshot.jpg';
+import cvMakerPoster from './assets/projectClips/cvMakerScreenshot.jpg';
+import battleshipPoster from './assets/projectClips/battleship_screenshot.jpg';
 
 export const navConfig = [
   {
@@ -82,6 +85,7 @@ export const brandIcons = [
 export const featuredProjects = [
   {
     clip: tennsCentrlClip,
+    poster: tennsCentrlPoster,
     name: 'TENNS CENTRL',
     description:
       'Fictional tennis shop site where a user can browse through merchandise across different pages, add / delete items, and proceed to a checkout page.',
@@ -99,6 +103,7 @@ export const featuredProjects = [
   },
   {
     clip: cvMakerClip,
+    poster: cvMakerPoster,
     name: 'CV Maker',
     description:
       'CV creator that allows user to add / delete / update jobs, education, skills, and their profile. User can then export their CV as a PDF.',
@@ -108,6 +113,7 @@ export const featuredProjects = [
   },
   {
     clip: battleshipClip,
+    poster: battleshipPoster,
     name: 'Battleship',
     description:
       'Classic Battleship game where users place ships and take turns placing attacks on their opponents board.',

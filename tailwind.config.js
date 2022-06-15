@@ -5,6 +5,10 @@ module.exports = {
       sans: ['Helvetica', 'sans-serif']
     },
     extend: {
+      letterSpacing: {
+        tightest: '-0.075em',
+        tightest1: '-.1em'
+      },
       colors: {
         shade0: '#f8f9fa',
         shade0Opaque: 'rgba(248, 249, 250, 0.9)',

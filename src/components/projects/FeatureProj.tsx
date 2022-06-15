@@ -1,11 +1,11 @@
 import React, { SyntheticEvent } from 'react';
 import FeatureTech from './FeatureTech';
 import { useInView } from 'react-intersection-observer';
-import ExtLink from '../common/ExtLink';
 
 interface dataProps {
   data: {
     clip: string;
+    poster: string;
     name: string;
     description: string;
     tech: string[];
@@ -37,6 +37,7 @@ export default function FeatureProj({ data }: dataProps) {
           onPointerLeave={pauseVideo}
           muted={true}
           preload="auto"
+          poster={data.poster}
           loop>
           <source src={data.clip} type="video/mp4" />
         </video>
