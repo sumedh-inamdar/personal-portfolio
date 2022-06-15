@@ -8,4 +8,4 @@ Personal portfolio highlighting select projects
 - Configured React without CRA
 
 ## Bugs
-- [ ] video playback delayed by few seconds upon hover on chrome only
+- [ ] no video image on safari mobile desktop

@@ -36,6 +36,7 @@ export default function FeatureProj({ data }: dataProps) {
           onPointerOver={playVideo}
           onPointerLeave={pauseVideo}
           muted={true}
+          preload="auto"
           loop>
           <source src={data.clip} type="video/mp4" />
         </video>
