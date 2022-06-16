@@ -5,7 +5,8 @@ Personal portfolio highlighting select projects
 ## Technologies
 - Typescript
 - Webpack
+- Firebase storage and hosting
 - Configured React without CRA
 
 ## Bugs
-- [ ] no video image on safari mobile desktop
+
