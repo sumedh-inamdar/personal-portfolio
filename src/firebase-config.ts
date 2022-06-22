@@ -5,7 +5,8 @@ const firebaseConfig = {
   projectId: 'portfolio-contact-bb658',
   storageBucket: 'portfolio-contact-bb658.appspot.com',
   messagingSenderId: '1052337582274',
-  appId: '1:1052337582274:web:57d7dbdf87982484c60b5b'
+  appId: '1:1052337582274:web:57d7dbdf87982484c60b5b',
+  measurementId: 'G-099MX5HEXJ'
 };
 
 export function getFirebaseConfig() {
