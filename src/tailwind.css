@@ -11,7 +11,7 @@
   }
   input,
   textarea {
-    @apply px-2 py-1 focus:pl-4 transition-all text-base border border-shade8 rounded-lg hover:bg-blueOpaque focus:bg-blue focus:text-shade0;
+    @apply px-2 py-1 focus:pl-4 transition-all text-base border border-shade8 rounded-lg hover:bg-shade2 focus:bg-blue focus:text-shade0;
   }
   input::placeholder,
   textarea::placeholder {

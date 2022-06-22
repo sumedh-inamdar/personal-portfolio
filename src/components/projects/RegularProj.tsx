@@ -38,7 +38,7 @@ export default function RegularProj({ data }: dataProps) {
                 aria-label="External Link"
                 rel="noreferrer"
                 target="_blank"
-                className="hover:scale-110 hover:text-blue transition-all">
+                className="hover:scale-110 transition-all">
                 <svg
                   width="24"
                   height="24"
@@ -57,7 +57,7 @@ export default function RegularProj({ data }: dataProps) {
                 aria-label="External Link"
                 rel="noreferrer"
                 target="_blank"
-                className="hover:scale-110 hover:text-blue transition-all">
+                className="hover:scale-110 transition-all">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
