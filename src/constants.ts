@@ -148,7 +148,7 @@ export const regularProjects = [
     delay: 'delay100'
   },
   {
-    name: 'To-do List',
+    name: 'Tacklist',
     description:
       'To-do list application encompassing JS OOP common principles / best practices. Layout and design inspired by Todoist (todoist.com)',
     tech: ['Vanilla JS', 'SOLID principles'],
