@@ -16,14 +16,14 @@ export default function Contact() {
     event.preventDefault();
 
     try {
-      const docRef = await addDoc(collection(db, 'contactSubmissions'), {
+      await addDoc(collection(db, 'contactSubmissions'), {
         name: (document.querySelector('#fullName') as HTMLInputElement).value,
         email: (document.querySelector('#userEmail') as HTMLInputElement).value,
         message: (document.querySelector('#userMessage') as HTMLTextAreaElement)
           .value,
         timestamp: new Date().toString()
       });
-      console.log('Document written with ID:', docRef.id);
+      console.log('Document written successfully');
       setViewModal(true);
       (document.querySelector('#contactForm') as HTMLFormElement).reset();
     } catch (error) {

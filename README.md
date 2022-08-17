@@ -10,3 +10,4 @@ Personal portfolio highlighting select projects
 
 ## Bugs
 
+- [ ] Menu nav links fail to scroll to proper section due to section lazy loading
