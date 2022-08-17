@@ -13,6 +13,9 @@ import battleshipClip from './assets/projectClips/clipThreeH264.m4v';
 import tennsCentrlPoster from './assets/projectClips/shoppingCartScreenshot.jpg';
 import cvMakerPoster from './assets/projectClips/cvMakerScreenshot.jpg';
 import battleshipPoster from './assets/projectClips/battleship_screenshot.jpg';
+import mongodb from './assets/brandIcons/mongodb.svg';
+import nodejs from './assets/brandIcons/nodejs.svg';
+import expressjs from './assets/brandIcons/expressjs.svg';
 
 export const navConfig = [
   {
@@ -37,13 +40,19 @@ export const navConfig = [
   }
 ];
 
-export const about = {
-  p1: `Hello! My name is Sumedh Inamdar and I enjoy building things for the web. I'm currently self-studying web development through the Odin Project.`,
-  p2: 'Before embarking on a journey to becoming a self-taught software developer, I worked as an Engineering Program Manager at Apple where I managed the technical execution of Magsafe and several other wireless charging technologies.',
-  p3: 'Utilizing my engineering and product design background, I enjoy approaching problems with a creative and technical mindset.'
-};
-
 export const brandIcons = [
+  {
+    name: 'JavaScript / TS',
+    src: typescriptLogo
+  },
+  {
+    name: 'React',
+    src: reactLogo
+  },
+  {
+    name: 'Jest',
+    src: jestLogo
+  },
   {
     name: 'HTML5',
     src: htmlLogo
@@ -53,20 +62,20 @@ export const brandIcons = [
     src: cssLogo
   },
   {
-    name: 'TypeScript / JS',
-    src: typescriptLogo
-  },
-  {
     name: 'Tailwind CSS',
     src: tailwindcss
   },
   {
-    name: 'React',
-    src: reactLogo
+    name: 'MongoDB',
+    src: mongodb
   },
   {
-    name: 'Jest',
-    src: jestLogo
+    name: 'Node.js',
+    src: nodejs
+  },
+  {
+    name: 'Express',
+    src: expressjs
   },
   {
     name: 'Webpack',

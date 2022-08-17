@@ -1,5 +1,4 @@
 import React from 'react';
-import { about } from '../../constants';
 import portrait from '../../assets/portrait.jpg';
 import { useInView } from 'react-intersection-observer';
 import SectionHeader from '../common/SectionHeader';
